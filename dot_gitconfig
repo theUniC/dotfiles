@@ -1,0 +1,14 @@
+# Este es el archivo de configuración de Git por usuario.
+[user]
+# Por favor, adapta y descomenta las siguientes líneas:
+	name = theUniC
+	email = theunic@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[diff]
+	submodule = log
+[init]
+	defaultBranch = main
