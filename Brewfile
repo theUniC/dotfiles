@@ -14,7 +14,6 @@ tap "shivammathur/extensions"
 tap "shivammathur/php"
 tap "symfony-cli/tap"
 
-
 # Regular formulas
 brew "adr-tools"
 brew "aws-shell"
@@ -64,6 +63,7 @@ brew "unzip"
 brew "wget"
 brew "yq"
 brew "zip"
+brew "zsh"
 brew "zsh-autosuggestions"
 brew "arkweid/lefthook/lefthook"
 brew "blackfireio/blackfire/blackfire"
