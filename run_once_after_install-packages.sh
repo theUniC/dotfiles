@@ -1,5 +1,15 @@
 #!/bin/env bash
 
+LOCKFILE="$HOME/.chezmoi_already_run.lock"
+
+if [ -e "$LOCKFILE" ]; then
+  echo "Chezmoi already initialized."
+  exit 0
+fi
+
+touch $LOCKFILE
+
+
 # Install all packages
 brew bundle
 
