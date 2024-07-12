@@ -21,6 +21,3 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Install Spacevim
 curl -sLf https://spacevim.org/install.sh | bash
-
-# Prepare workspace directory
-mkdir -p ~/workspace
