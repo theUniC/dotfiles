@@ -3,6 +3,7 @@
 # Por favor, adapta y descomenta las siguientes líneas:
 	name = theUniC
 	email = theunic@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIId8lBK0kHh0bgqI3r+7pFK4pBlfH5SEwL5xWTSYWX1u
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -12,3 +13,9 @@
 	submodule = log
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
